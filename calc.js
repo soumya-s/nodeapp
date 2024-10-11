@@ -4,4 +4,5 @@ function add(a,b){
 }
 
 
-module.exports.add = add;
+//module.exports.add = add;
+exports.add = add;
