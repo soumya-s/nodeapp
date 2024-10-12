@@ -1,6 +1,11 @@
 var http = require('http');
 var calc = require('./calc.js');
+var fs   = require('fs')
 
+
+fs.readFile('calc.js','utf8',function(err,data){
+    console.log(data);
+})
 var sum  = calc.add(2,3)
 console.log("the result is " +sum)
 
