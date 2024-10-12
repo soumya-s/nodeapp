@@ -1,6 +1,6 @@
 var http = require('http');
 var calc = require('./calc.js');
-var fs   = require('fs')
+
 
 
 fs.readFile('calc.js','utf8',function(err,data){
@@ -8,6 +8,8 @@ fs.readFile('calc.js','utf8',function(err,data){
 })
 var sum  = calc.add(2,3)
 console.log("the result is " +sum)
+
+//reading file
 
 
 http.createServer(function(req,res){
